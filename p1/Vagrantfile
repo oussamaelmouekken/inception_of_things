@@ -1,0 +1,28 @@
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-24.04"
+
+  # Server: K3s controller
+  config.vm.define "oelmoueS" do |server|
+    server.vm.hostname = "oelmoueS"
+    server.vm.network "private_network", ip: "192.168.56.110"
+
+    server.vm.provider "virtualbox" do |vb|
+      vb.name = "oelmoueS"
+      vb.cpus = 1
+      vb.memory = 1024
+    end
+  end
+
+  # ServerWorker: K3s agent
+  config.vm.define "oelmoueSW" do |worker|
+    worker.vm.hostname = "oelmoueSW"
+    worker.vm.network "private_network", ip: "192.168.56.111"
+
+    worker.vm.provider "virtualbox" do |vb|
+      vb.name = "oelmoueSW"
+      vb.cpus = 1
+      vb.memory = 1024
+    end
+  end
+end

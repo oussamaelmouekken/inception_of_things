@@ -1,0 +1,12 @@
+Log created: 2026-10-14T21:03:29.043433000Z
+Process ID:  43723 (0xaacb)
+Parent PID:  2834 (0xb12)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: oelmoueS
+Arg[3]: --startvm
+Arg[4]: 9fbd12ce-70fb-4351-9d6d-9964b6fe2016
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
