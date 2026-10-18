@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/oussamaelmouekken/inception_of_things.git
     targetRevision: master
-    path: kubernetes
+    path: p3/kubernetes
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
